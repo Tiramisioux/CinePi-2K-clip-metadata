@@ -1,9 +1,9 @@
 ## CinePi-2K clip metadata
-For generating and continuously <i>metadata.csv</i> and <i>edl.edl</i> with all the clips synced on a timeline, for easy import to DaVinci. Uses the file <i>controls.py</i>, a slightly modified version of the original `home/pi/camera/proxy.py` to get the shutter angle and ISO from the camera. Like for <i>rec_signal.py</i> GPIO 21 has to be connected to GPIO 20. Edl file conforms to standard edl format,
+For generating and continuously updating<i>metadata.csv</i> and <i>edl.edl</i> with all the clips synced on a timeline, for easy import to DaVinci. Uses the file <i>controls.py</i>, a slightly modified version of the original `home/pi/camera/proxy.py` to get the shutter angle and ISO from the camera. Like for <i>rec_signal.py</i> GPIO 21 has to be connected to GPIO 20. Edl file conforms to standard edl format,
 
 Clips will be conformed to 24 fps. To change this, change the variable `fps_base`. Clips shot in a different frame than fps_base (for example when speed ramping or doing slow-mo) will be marked with a pink flag in DaVincvi Resolve.
 
-##Wiring
+## Wiring
 
 For the script to work, GPIO 21 has to be connected to GPIO 20. The script uses GPIO 20 to detect when recording stops, and then writes the metadata of the clip just recorded.
 
