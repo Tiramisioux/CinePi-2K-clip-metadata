@@ -61,7 +61,6 @@ Add the following lines before the line <i>python3/home/pi/camera/cameracore3.py
 
 Exit by pressing ctrl-x and then selecting "yes".
 
-Reboot the Pi
 
 ## Installing the script
 
