@@ -74,7 +74,7 @@ SSH into the Pi. Then,
 
 add the lines
 
-`sudo python3 /home/pi/cinemate/metadata.py &`
+`sudo python3 /home/pi/cinepi-2k-clip-metadata/metadata.py &`
 
 before the line <i>exit 0</i>
 
